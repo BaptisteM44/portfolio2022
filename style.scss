@@ -138,6 +138,38 @@ body{
 
 /* END SECTION PRESENTATION */
 
+/* SECTION ABOUT */
+.about{
+    margin: 40px auto;
+    padding: 6% 5%;
+    .about_title{
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            border: 2px solid $color1;
+            background-color: $color1;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+        }
+        }
+}
+.about_content{
+    max-width: 950px;
+    display: flex;
+    margin: 40px auto;
+    .about_img{
+        width: 400px;
+        height: 400px;
+        align-items: center;
+    }
+    .about_text{
+        margin: auto 20px;
+    }
+}
+/* END SECTION ABOUT */
+
 /* SECTION PROJET */
 // .section_project{
 //     padding-top: 10em;
@@ -147,7 +179,7 @@ body{
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
-    padding: 5em 4.2em;
+    padding: 3em 4.2em;
 }
 .project_content_process{
     position: relative;
@@ -227,7 +259,7 @@ body{
     padding: 25px;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 1.2em 2.2em 0.2em rgba(0, 0, 0, 0.185);
+    box-shadow: 0 2.2em 2.2em 0.2em rgba(0, 0, 0, 0.185);
     p{
     color: $color1;
     font-size: 14px;
@@ -264,7 +296,9 @@ body{
         }
     }
     .project_allskills{
-        margin-top: 40px;
+        margin-top: 30px;
+        display: flex;
+        justify-content: flex-start;
         .skills_project{
             padding: 2px;
             margin: 0 auto;
@@ -272,6 +306,11 @@ body{
             font-size: 10px;
             font-weight: 500;
         }
+    }
+    .project_link{
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
     }
     
     
