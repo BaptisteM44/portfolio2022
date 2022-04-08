@@ -20,18 +20,29 @@ window.addEventListener('scroll', function(){
     if (scroll > 100){
         // navbartitle.style.padding = "12px"
         // navbartitle.style.fontSize = "14px"
-        if (scroll > 900){
+        if (scroll > 1300){
             img1.style.opacity = "1"
             img2.style.opacity = "1"
         } else {
             img1.style.opacity = "0.2"
             img2.style.opacity = "0.2"
         }
-        if (scroll > 1600){
+        if (scroll > 2400){
             img3.style.opacity = "1"
         } else {
             img3.style.opacity = "0.2"
         }
+        if (scroll > 4500){
+            img4.style.opacity = "1"
+        } else   {
+            img4.style.opacity = "0.2"
+        }
+        if (scroll > 5600){
+            img5.style.opacity = "1"
+        } else   {
+            img5.style.opacity = "0.2"
+        }
+
     } else {
         img3.style.opacity = "0.2"
         // navbartitle.style.padding = "35px"
