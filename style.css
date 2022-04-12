@@ -108,7 +108,7 @@ body {
 /* END HEADER */
 /* SECTION PRESENTATION */
 .presentation {
-  height: 770px;
+  height: 100vh;
   margin: 0 auto;
   width: 90%;
   display: -webkit-box;
@@ -123,14 +123,13 @@ body {
 
 .presentation h1 {
   font-weight: 500;
-  font-size: 60px;
+  font-size: clamp(22px, 8vw, 60px);
   color: #1c2134;
 }
 
 .presentation .presentation_title {
   font-weight: 200;
-  width: 25%;
-  text-align: justify;
+  width: 33%;
 }
 
 .presentation .presentation_title span {
@@ -138,7 +137,7 @@ body {
 }
 
 .presentation_side_img .presentation_img {
-  width: 350px;
+  width: 250px;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -151,7 +150,8 @@ body {
   margin: 0;
   font-size: 12px;
   text-transform: uppercase;
-  position: relative;
+  position: absolute;
+  top: 88vh;
   text-align: center;
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
@@ -182,8 +182,8 @@ body {
 /* END SECTION PRESENTATION */
 /* SECTION ABOUT */
 .about {
-  margin: 40px auto;
-  padding: 6% 5%;
+  margin: 0 auto;
+  padding: 0% 5%;
 }
 
 .about .about_title {
@@ -237,7 +237,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 12em;
 }
 
 .project_technos {
@@ -346,8 +345,8 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   border: 2px solid #1c2134;
-  -webkit-box-shadow: 8px -8px 0 #53bb89;
-          box-shadow: 8px -8px 0 #53bb89;
+  -webkit-box-shadow: -8px 8px 0 #1c2134;
+          box-shadow: -8px 8px 0 #1c2134;
 }
 
 .project_allproject_content p {
@@ -422,6 +421,83 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.contact h2 {
+  padding: 3%;
+}
+
+.contact .contact_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3%;
+  width: 450px;
+}
+
+.contact .contact_content p {
+  margin-bottom: 20px;
+}
+
+.contact_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 0;
+  font-size: 28px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact_icon i {
+  color: #1c2134;
+}
+
+.contact_icon i:hover {
+  color: #53bb89;
+}
+
+button {
+  margin: 5px auto;
+  font-weight: 300;
+  border: solid 2px #1c2134;
+  outline: 0;
+  padding: 5px 5px;
+  font-size: 14px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  width: 70%;
+}
+
+button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1c2134;
+  z-index: -1;
+  border: solid 2px #dfe9f3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+button.style-1::after {
+  width: 90%;
+  height: 90%;
+}
+
+button.style-1:hover::after {
+  width: 100%;
+  height: 100%;
+  top: 0.5rem;
+  left: -0.5rem;
 }
 
 .test2 {
