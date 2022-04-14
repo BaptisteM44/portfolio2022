@@ -610,7 +610,7 @@ button {
             z-index: 1000;
             margin: 0 auto;
             width: auto;
-            height: 85vh;
+            height: 31vh;
             .project_technos_images{
                 padding: 10px;
             }
@@ -632,5 +632,11 @@ button {
     .contact_icon{
         width: 90%;
         margin: 25px auto;
+    }
+    .project_logo_content{
+        .project_img{
+            width: 19px;
+            height: 19px;
+        }
     }
 }
