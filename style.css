@@ -764,14 +764,23 @@ button.style-2:hover::after {
     z-index: 1000;
     margin: 0 auto;
     width: auto;
-    height: 31vh;
+    height: 40vh;
   }
   .project_content_process .project_technos .project_technos_images {
     padding: 10px;
   }
+  .project_content_process .project_technos .project_technos_images .project_technos_title {
+    font-size: 18px;
+  }
+  .project_content_process .project_technos .project_technos_images .project_technos_text {
+    font-size: 12px;
+  }
   .project_allproject {
     margin: 0 auto;
     width: auto;
+  }
+  .project_allproject .project_allproject_content {
+    margin: 16rem 10px;
   }
   .contact .contact_content {
     width: auto;
