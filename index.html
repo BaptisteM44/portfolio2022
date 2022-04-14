@@ -13,10 +13,7 @@
 </head>
 <body>
     <header class="header_nav">
-        <div class="navbar_title_element">
-            <span id="navbar_title" class="navbar_title">Baptiste Morvan</span>
-        </div>
-        <nav class="navbar_list">
+        <!-- <nav class="navbar_list">
             <ul class="navbar_nav">
                 <li class="navbar_item">
                     <a href="#about">about</a>
@@ -27,8 +24,22 @@
                 <li class="navbar_item">
                     <a href="#contact">contact</a>
                 </li>
-            </ul>
-        </nav>
+            </ul> -->
+        <nav id="navbar">
+            <div class="navbar_title_element">
+                <span id="navbar_title" class="navbar_title">Baptiste Morvan</span>
+            </div>
+            <div class="nav-elements" id="nav-elements">
+              <ul id="navbarlinks" class="navbarlinks">
+                <li class="navbar__link first"><a href="#about">About</a></li>
+                <li class="navbar__link second"><a href="#projets">Projets</a></li>
+                <li class="navbar__link third"><a href="#contact">contact</a></li>
+              </ul>
+              <div class="burger">
+                <span class="span-burger"></span>
+              </div>
+            </div>
+          </nav>
     </header>
     <section class="presentation">
         <article class="presentation_title">
@@ -39,12 +50,11 @@
             <img class="presentation_img" src="https://picsum.photos/200/300?grayscale" alt="photo_presentation">
         </aside>
         <div class="presentation_discover">
-            <a class="text-discover" href="#projets">découvrir →</a>
+            <a class="text-discover" href="#about">découvrir →</a>
         </div>
     </section>
     
     <section id="about" class="about">
-        <div>
             <div class="about_title">
                 <h1>About</h1>
             </div>
@@ -52,11 +62,8 @@
                 <img class="about_img" src="https://picsum.photos/200/300?grayscale" alt="photo_presentation">
                 <span class="about_text">Suite à ma formation de développeur web, doté d’une base solide, je suis capable de développer des sites web et des applications modernes. Toujours intéressé par l’apprentissage de nouvelles technologies et de nouveaux langages, je cherche un poste à Nantes, et je suis libre dès que possible.</span>
             </div>
-
-        </div>
-
     </section>
-    <section class="section_project about">
+    <section id="projets"  class="section_project about">
         <div class="about_title">
             <h1>Projets</h1>
         </div>
@@ -103,7 +110,7 @@
                     </div>
                     
                 </article>
-                <article id="projets" class="project_allproject">
+                <article class="project_allproject">
                     <div class="project_allproject_content">
                         <div class="allproject_img">
                             <img class="project_img1" src="images/img_github/screenshotP2.png" alt="">

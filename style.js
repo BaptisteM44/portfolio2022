@@ -1,13 +1,14 @@
-// const body = $("#body");
+// burger
 
-// body.on("scroll", function(e) {
-//     if (this.scrollTop > 220) {
-//         body.addClass("test_fix");
-//     } else {
-//         body.removeClass("test_fix")
-//     }
-// })
-
+function toggleMenu () {  
+    const navbar = document.querySelector('.nav-elements');
+    const burger = document.querySelector('.burger');
+    burger.addEventListener('click', (e) => {    
+      navbar.classList.toggle('show-nav');
+    });    
+  }
+  toggleMenu();
+  
 test = document.getElementById("test");
 navbartitle = document.getElementById('navbar_title')
 document.getElementById('img1')
