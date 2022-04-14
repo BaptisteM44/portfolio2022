@@ -770,10 +770,10 @@ button.style-2:hover::after {
     padding: 10px;
   }
   .project_content_process .project_technos .project_technos_images .project_technos_title {
-    font-size: 18px;
+    font-size: 16px;
   }
   .project_content_process .project_technos .project_technos_images .project_technos_text {
-    font-size: 12px;
+    font-size: 10px;
   }
   .project_allproject {
     margin: 0 auto;
@@ -793,8 +793,9 @@ button.style-2:hover::after {
     margin: 25px auto;
   }
   .project_logo_content .project_img {
-    width: 19px;
-    height: 19px;
+    width: 46px;
+    height: 25px;
+    margin-top: 5px;
   }
 }
 /*# sourceMappingURL=style.css.map */

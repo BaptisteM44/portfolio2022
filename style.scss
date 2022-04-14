@@ -614,10 +614,10 @@ button {
             .project_technos_images{
                 padding: 10px;
                 .project_technos_title{
-                    font-size: 18px;
+                    font-size: 16px;
                 }
                 .project_technos_text{
-                    font-size: 12px;
+                    font-size: 10px;
                 }
             }
         }
@@ -644,8 +644,9 @@ button {
     }
     .project_logo_content{
         .project_img{
-            width: 19px;
-            height: 19px;
+            width: 46px;
+            height: 25px;
+            margin-top: 5px;
         }
     }
 }
