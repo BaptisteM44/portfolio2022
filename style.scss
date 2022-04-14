@@ -401,7 +401,7 @@ body{
     }
     .allproject_img{
         width: 90%;
-        height: 360px;
+        height: 320px;
     }
     .project_img1{
         height: 82%;
@@ -417,7 +417,7 @@ body{
         position: absolute;
         top: 32px;
         right: 15px;
-        height: 300px;
+        height: auto;
         width: 95px;
         border: 1px solid $color1;
         box-shadow: 0 1.2em 2.2em 0.2em rgba(0, 0, 0, 0.185);
@@ -426,7 +426,8 @@ body{
             object-fit: cover;
             object-position: top;
             width: 100%;
-            height: 100%;
+            height: auto;
+            max-height: 300px;
         }
     }
     .div_project_img3{
@@ -626,8 +627,19 @@ button {
         margin: 0 auto;
         width: auto;
         .project_allproject_content{
-            margin: 16rem 10px;
+            margin: 15rem 0px;
+            // .allproject_img{
+            //     height: auto;
+            // }
+            .project_allskills{
+                margin-top: 3px;
+            }
+            .project_link{
+                margin-top: 0px;
+            }
         }
+        
+        
     }
     .contact{
         .contact_content{
