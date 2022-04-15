@@ -28,6 +28,8 @@ body {
   width: 200px;
   height: 40px;
   z-index: -100;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .navbar_title_element .navbar_title {
@@ -781,7 +783,7 @@ button.style-2:hover::after {
     width: auto;
   }
   .project_allproject .project_allproject_content {
-    margin: 15rem 0px;
+    margin: 16rem 0px;
   }
   .project_allproject .project_allproject_content .project_allskills {
     margin-top: 3px;
