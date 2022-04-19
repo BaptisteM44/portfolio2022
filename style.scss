@@ -589,6 +589,9 @@ button {
 /* media queries */
 
 @media screen and (max-width:500px){
+    .navbar_title_element{
+        height: 57px;
+    }
     .presentation{
         .presentation_title{
             width: auto;
@@ -597,6 +600,9 @@ button {
     }
     .presentation_discover{
         top: 94vh;
+    }
+    .about{
+        padding: 0% 8%;
     }
     .about_content{
         flex-direction: column;
@@ -610,7 +616,7 @@ button {
         flex-direction: column;
         .project_technos{
             z-index: 1000;
-            margin: 0 auto;
+            margin: 0 15px;
             width: auto;
             height: 40vh;
             .project_technos_images{
@@ -657,8 +663,8 @@ button {
     }
     .project_logo_content{
         .project_img{
-            width: 46px;
-            height: 25px;
+            width: 40px;
+            height: 40px;
             margin-top: 5px;
         }
     }
