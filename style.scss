@@ -28,12 +28,6 @@ body{
     margin: 0 auto;
 }
 /* HEADER */
-// .header_nav{
-//     height: 100px;
-//     opacity: 0.9;
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
     .navbar_title_element{
         position: fixed;
         margin: 0 auto;
@@ -60,7 +54,7 @@ body{
     display: flex;
     height: 12vh;
     justify-content: space-between;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     width: 90%;
     margin: auto;
