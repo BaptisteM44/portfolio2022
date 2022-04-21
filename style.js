@@ -17,17 +17,18 @@ document.getElementById('img3')
 
 window.addEventListener('scroll', function(){
     const scroll = this.document.documentElement.scrollTop;
+    const min500 = window.matchMedia("(min-width: 500px)");
     console.log(scroll);
-    // if (scroll > 100, window.matchMedia("(max-width: 500px)").matches){
+    // if (scroll > 100, min500.matches){
     //     navbar_title.style.transform = "translate(-100px, 80%)rotate(270deg)"
     // } else{
     //     navbar_title.style.transform = "translate(0px, 0%)rotate(0deg)"
     // }
-    if (window.matchMedia("(min-width: 500px)").matches + scroll > 100) {
+    if (min500.matches && scroll > 100) {
         navbar_title.style.transform = "translate(-210px, 110%)rotate(270deg)"
         
-    }else if (window.matchMedia("(max-width: 500px)").matches + scroll > 100) {
-        navbar_title.style.transform = "translate(-100px, 80%)rotate(270deg)"
+    }else if (window.matchMedia("(max-width: 500px)").matches && scroll > 100) {
+        navbar_title.style.transform = "translate(-110px, 240%)rotate(270deg)"
     }
     else{
         navbar_title.style.transform = "rotate(0deg)"
