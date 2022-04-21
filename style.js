@@ -1,3 +1,4 @@
+ScrollReveal().reveal('.headline', { delay: 400 });
 // burger
 
 function toggleMenu () {  
