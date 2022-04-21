@@ -18,15 +18,21 @@ document.getElementById('img3')
 window.addEventListener('scroll', function(){
     const scroll = this.document.documentElement.scrollTop;
     console.log(scroll);
-    if (scroll > 100){
-        navbar_title.style.transform = "translate(-100px, 30%)rotate(270deg)"
-        // navbar_title.style.top = "50px"
-        // navbar_title.style.left = "-80px"
-    } else{
-        navbar_title.style.transform = "rotate(0deg)"
-        // navbar_title.style.top = "auto"
-        // navbar_title.style.left = "auto"
+    // if (scroll > 100, window.matchMedia("(max-width: 500px)").matches){
+    //     navbar_title.style.transform = "translate(-100px, 80%)rotate(270deg)"
+    // } else{
+    //     navbar_title.style.transform = "translate(0px, 0%)rotate(0deg)"
+    // }
+    if (window.matchMedia("(min-width: 500px)").matches + scroll > 100) {
+        navbar_title.style.transform = "translate(-210px, 110%)rotate(270deg)"
+        
+    }else if (window.matchMedia("(max-width: 500px)").matches + scroll > 100) {
+        navbar_title.style.transform = "translate(-100px, 80%)rotate(270deg)"
     }
+    else{
+        navbar_title.style.transform = "rotate(0deg)"
+    }
+    
         if (scroll > 1300){
             img1.style.opacity = "1"
             img2.style.opacity = "1"
