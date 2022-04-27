@@ -40,12 +40,6 @@ body{
         transition: all 0.7s ease-in-out;
         font-size: 22px;
         font-weight: 300;
-        // .navbar_title{
-        //     font-size: 20px;
-        //     width: 200px;
-        //     height: 200px;
-        //     margin: 0 auto;
-        // }
     }
   nav {
     width: 90%;
@@ -258,7 +252,7 @@ body{
         content: "";
         top: 100%;
         left: 47%;
-        width: 160px;
+        width: 162px;
         height: 3px;
         background: $color1;
     }
@@ -386,11 +380,11 @@ body{
 }
 .project_allproject_content{
     margin: 16rem auto;
+    padding: 15px;
     width: auto;
     max-width: 440px;
     height: auto;
     position: relative;
-    padding: 25px;
     display: flex;
     flex-direction: column;
     border: 2px solid $color1;
@@ -407,17 +401,22 @@ body{
     p{
     color: $color1;
     font-size: 14px;
+    margin: 10px auto;
     }
     .allproject_img{
         width: 100%;
-        height: 320px;
+        height: auto;
         transition: all 0.3s ease-in-out;
+        margin: 0 auto;
     }
     .project_img1{
-        height: 82%;
-        width: 100%;
+        margin: 1rem auto;
+        height: auto;
+        max-height: 100%;
+        width: auto;
+        max-width: 100%;
         display: flex;
-        object-fit: cover;
+        object-fit: contain;
         background-position: center center;
         background-repeat: no-repeat;
         object-position: top;
@@ -511,7 +510,7 @@ button {
     font-weight: 300;
     border: solid 2px $color1;
     outline: 0;
-    padding: 9px;
+    padding: 8px;
     font-size: 14px;
     background-color: white;
     position: relative;
@@ -598,9 +597,9 @@ button {
 /* media queries */
 
 @media screen and (max-width:500px){
-    // .navbar_title_element{
-    //     translate: (-100px, 80%)rotate(270deg);
-    // }
+    .navbar_title_element {
+        font-size: 14px;
+    }
     .presentation{
         .presentation_title{
             width: auto;
@@ -608,7 +607,7 @@ button {
         }
     }
     .presentation_discover{
-        top: 94vh;
+        top: 91vh;
     }
     .about{
         padding: 0% 8%;
@@ -625,7 +624,7 @@ button {
         flex-direction: column;
         .project_technos{
             z-index: 1000;
-            margin: 0 15px;
+            margin: 0 auto;
             width: auto;
             height: 40vh;
             .project_technos_images{
@@ -645,14 +644,14 @@ button {
         width: auto;
         .project_allproject_content{
             margin: 16rem 0px;
-            // .allproject_img{
-            //     height: auto;
-            // }
             .project_allskills{
                 margin-top: 3px;
             }
             .project_link{
                 margin-top: 0px;
+            }
+            p{
+                font-size: 12px;
             }
         }
         
@@ -673,8 +672,8 @@ button {
     }
     .project_logo_content{
         .project_img{
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             margin-top: 5px;
         }
     }

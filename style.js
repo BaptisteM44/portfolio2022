@@ -26,10 +26,10 @@ window.addEventListener('scroll', function(){
     //     navbar_title.style.transform = "translate(0px, 0%)rotate(0deg)"
     // }
     if (min500.matches && scroll > 100) {
-        navbar_title.style.transform = "translate(-210px, 110%)rotate(270deg)"
+        navbar_title.style.transform = "translate(-210px, 150%)rotate(270deg)"
         
     }else if (window.matchMedia("(max-width: 500px)").matches && scroll > 100) {
-        navbar_title.style.transform = "translate(-110px, 240%)rotate(270deg)"
+        navbar_title.style.transform = "translate(-80px, 240%)rotate(270deg)"
     }
     else{
         navbar_title.style.transform = "rotate(0deg)"

@@ -321,7 +321,7 @@ navbarlinks {
   content: "";
   top: 100%;
   left: 47%;
-  width: 160px;
+  width: 307px;
   height: 3px;
   background: #1c2134;
 }
@@ -487,11 +487,11 @@ navbarlinks {
 
 .project_allproject_content {
   margin: 16rem auto;
+  padding: 15px;
   width: auto;
   max-width: 440px;
   height: auto;
   position: relative;
-  padding: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,23 +523,28 @@ navbarlinks {
 .project_allproject_content p {
   color: #1c2134;
   font-size: 14px;
+  margin: 10px auto;
 }
 
 .project_allproject_content .allproject_img {
   width: 100%;
-  height: 320px;
+  height: auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  margin: 0 auto;
 }
 
 .project_allproject_content .project_img1 {
-  height: 82%;
-  width: 100%;
+  margin: 1rem auto;
+  height: auto;
+  max-height: 100%;
+  width: auto;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
   background-position: center center;
   background-repeat: no-repeat;
   -o-object-position: top;
@@ -666,7 +671,7 @@ button {
   font-weight: 300;
   border: solid 2px #1c2134;
   outline: 0;
-  padding: 9px;
+  padding: 8px;
   font-size: 14px;
   background-color: white;
   position: relative;
@@ -756,6 +761,9 @@ button.style-2:hover::after {
 /* END SECTION PROJET */
 /* media queries */
 @media screen and (max-width: 500px) {
+  .navbar_title_element {
+    font-size: 14px;
+  }
   .presentation .presentation_title {
     width: auto;
     margin-bottom: 300px;
@@ -785,7 +793,7 @@ button.style-2:hover::after {
   }
   .project_content_process .project_technos {
     z-index: 1000;
-    margin: 0 15px;
+    margin: 0 auto;
     width: auto;
     height: 40vh;
   }
@@ -811,6 +819,9 @@ button.style-2:hover::after {
   .project_allproject .project_allproject_content .project_link {
     margin-top: 0px;
   }
+  .project_allproject .project_allproject_content p {
+    font-size: 12px;
+  }
   .contact .contact_content {
     width: auto;
   }
@@ -822,8 +833,8 @@ button.style-2:hover::after {
     margin: 25px auto;
   }
   .project_logo_content .project_img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     margin-top: 5px;
   }
 }
