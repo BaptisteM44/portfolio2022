@@ -15,16 +15,12 @@ navbartitle = document.getElementById('navbar_title')
 document.getElementById('img1')
 document.getElementById('img2')
 document.getElementById('img3')
+document.getElementById('test')
 
 window.addEventListener('scroll', function(){
     const scroll = this.document.documentElement.scrollTop;
     const min500 = window.matchMedia("(min-width: 500px)");
     console.log(scroll);
-    // if (scroll > 100, min500.matches){
-    //     navbar_title.style.transform = "translate(-100px, 80%)rotate(270deg)"
-    // } else{
-    //     navbar_title.style.transform = "translate(0px, 0%)rotate(0deg)"
-    // }
     if (min500.matches && scroll > 100) {
         navbar_title.style.transform = "translate(-210px, 150%)rotate(270deg)"
         
@@ -36,6 +32,7 @@ window.addEventListener('scroll', function(){
     }
     
         if (scroll > 1300){
+            test.style.boxShadow = "-8px 8px 0 rgb(28, 57, 86)"
             img1.style.opacity = "1"
             img2.style.opacity = "1"
             img8.style.opacity = "1"
@@ -46,16 +43,19 @@ window.addEventListener('scroll', function(){
             img9.style.opacity = "0.1"
         }
         if (scroll > 2400){
+            test.style.boxShadow = "-8px 8px 0 rgb(223, 221, 208)"
             img3.style.opacity = "1"
         } else {
             img3.style.opacity = "0.1"
         }
         if (scroll > 4500){
+            test.style.boxShadow = "-8px 8px 0 rgb(224, 200, 164)"
             img4.style.opacity = "1"
         } else   {
             img4.style.opacity = "0.1"
         }
         if (scroll > 5600){
+            test.style.boxShadow = "-8px 8px 0 rgb(28, 57, 86)"
             img5.style.opacity = "1"
             img9.style.opacity = "1"
         } else   {
@@ -63,6 +63,7 @@ window.addEventListener('scroll', function(){
             img9.style.opacity = "0.1"
         }
         if (scroll > 6300){
+            test.style.boxShadow = "-8px 8px 0 rgb(83, 187, 137)"
             img6.style.opacity = "1"
             img7.style.opacity = "1"
             img5.style.opacity = "0.1"
@@ -72,6 +73,7 @@ window.addEventListener('scroll', function(){
             img7.style.opacity = "0.1"
         }
         if (scroll > 7300){
+            test.style.boxShadow = "-8px 8px 0 rgb(28, 57, 86)"
             img3.style.opacity = "1"
             img5.style.opacity = "0.1"
             img6.style.opacity = "0.1"

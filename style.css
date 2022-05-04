@@ -1,4 +1,6 @@
 * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -314,16 +316,6 @@ navbarlinks {
   margin-left: 40px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}
-
-.presentation_discover::after {
-  position: absolute;
-  content: "";
-  top: 100%;
-  left: 47%;
-  width: 307px;
-  height: 3px;
-  background: #1c2134;
 }
 
 /* END SECTION PRESENTATION */
@@ -643,7 +635,7 @@ navbarlinks {
 }
 
 .contact .contact_content .contact_link {
-  width: 45%;
+  width: 58%;
 }
 
 .contact_icon {
@@ -769,7 +761,7 @@ button.style-2:hover::after {
     margin-bottom: 300px;
   }
   .presentation_discover {
-    top: 94vh;
+    top: 91vh;
   }
   .about {
     padding: 0% 8%;
