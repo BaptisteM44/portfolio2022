@@ -225,10 +225,13 @@ body{
 .presentation_side_img {
     .presentation_img{
         width: auto;
-        max-width: 250px;
+        max-width: 400px;
         height: auto;
         object-fit: cover;
-        box-shadow: 0 1.2em 2.2em 0.2em rgba(0, 0, 0, 0.185);
+        background-color: $color10;
+        border-radius: 46% 54% 41% 59% / 46% 34% 66% 54%;
+        box-shadow:-8px 8px 0 ($color1);
+        // box-shadow: 0 1.2em 2.2em 0.2em rgba(0, 0, 0, 0.185);
     }
 }
 .presentation_discover{
@@ -291,6 +294,7 @@ body{
     }
     .about_text{
         margin: auto 20px;
+        z-index: -100;
     }
 }
 /* END SECTION ABOUT */

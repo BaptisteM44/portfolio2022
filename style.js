@@ -1,4 +1,4 @@
-ScrollReveal().reveal('.headline', { delay: 400 });
+ScrollReveal().reveal('.headline', { delay: 500, duration: 1700 ,origin: 'left', distance: '50px' });
 // burger
 
 function toggleMenu () {  
