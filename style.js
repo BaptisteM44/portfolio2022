@@ -54,7 +54,7 @@ window.addEventListener('scroll', function(){
         } else   {
             img4.style.opacity = "0.1"
         }
-        if (scroll > 5600){
+        if (scroll > 5300){
             test.style.boxShadow = "-8px 8px 0 rgb(28, 57, 86)"
             img5.style.opacity = "1"
             img9.style.opacity = "1"
