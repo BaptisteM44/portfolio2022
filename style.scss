@@ -288,7 +288,7 @@ body{
     margin: 40px auto;
     .about_img{
         width: 400px;
-        height: 400px;
+        height: auto;
         object-fit: cover;
         align-items: center;
         box-shadow: -8px 8px 0 ($color1);

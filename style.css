@@ -352,7 +352,7 @@ navbarlinks {
 
 .about_content .about_img {
   width: 400px;
-  height: 400px;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-box-align: center;
